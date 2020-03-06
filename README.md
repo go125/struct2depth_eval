@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # struct2depth
 
 This a method for unsupervised learning of depth and egomotion from monocular video, achieving new state-of-the-art results on both tasks by explicitly modeling 3D object motion, performing on-line refinement and improving quality for moving objects by novel loss formulations. It will appear in the following paper: 
@@ -146,8 +146,3 @@ The core implementation is derived from [https://github.com/tensorflow/models/tr
 by [Reza Mahjourian](rezama@google.com), which in turn is based on [SfMLearner
 (https://github.com/tinghuiz/SfMLearner)](https://github.com/tinghuiz/SfMLearner)
 by [Tinghui Zhou](https://github.com/tinghuiz).
-=======
-# TestCheckpointFromDFV
-
-python inference.py --logtostderr --file_extension jpg --depth --egomotion false --input_dir input --output_dir output --model_ckpt cityscapes_kitti_learned_intrinsics/model-1000977
->>>>>>> 4bf2c6e99300d1d9646e1fd4b657400fb966d634
