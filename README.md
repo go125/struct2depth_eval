@@ -77,7 +77,7 @@ python inference.py \
     --egomotion true \
     --input_dir /Users/gosato/Desktop/sekilab_3A2/models/research/struct2depth/input \
     --output_dir /Users/gosato/Desktop/output \
-    --model_ckpt /Users/gosato/Desktop/sekilab_3A2/models/research/struct2depth/cityscapes_kitti_learned_intrinsics/model-1000977
+    --model_ckpt /Users/gosato/Desktop/KITTImodel/model-23534
 
 
 ```
