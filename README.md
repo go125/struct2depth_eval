@@ -55,6 +55,14 @@ python inference.py \
     --model_ckpt $model_checkpoint
 ```
 
+```shell
+
+
+python inference.py --logtostderr --file_extension jpg --depth --egomotion false --input_dir /Users/gosato/Desktop/sekilab_3A2/models/research/struct2depth/input --output_dir /Users/gosato/Desktop/output --model_ckpt /Users/gosato/Desktop/sekilab_3A2/models/research/struct2depth/cityscapes_kitti_learned_intrinsics/model-1000977
+```
+
+
+
 Note that the egomotion prediction expects the files in the input directory to be a consecutive sequence, and that sorting the filenames alphabetically is putting them in the right order.
 
 One can also run inference on KITTI by providing
