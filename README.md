@@ -82,6 +82,20 @@ python inference.py \
 
 ```
 
+```shell
+
+python inference.py \
+    --logtostderr \
+    --file_extension jpg \
+    --depth \
+    --egomotion true \
+    --input_dir /Users/gosato/Desktop/sekilab_3A2/models/research/struct2depth/input \
+    --output_dir /Users/gosato/Desktop/output \
+    --model_ckpt /Users/gosato/Desktop/TokushimaModel/model-58058
+
+
+```
+
 
 
 Note that the egomotion prediction expects the files in the input directory to be a consecutive sequence, and that sorting the filenames alphabetically is putting them in the right order.
