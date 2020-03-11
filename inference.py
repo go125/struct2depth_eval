@@ -80,8 +80,8 @@ flags.DEFINE_string('input_list_file', None, 'Text file containing paths to '
                     'respect to the list file location. Relative path '
                     'structures will be mirrored in the output directory.')
 flags.DEFINE_integer('batch_size', 1, 'The size of a sample batch')
-flags.DEFINE_integer('img_height', 128, 'Input frame height.')
-flags.DEFINE_integer('img_width', 416, 'Input frame width.')
+flags.DEFINE_integer('img_height', 192, 'Input frame height.')
+flags.DEFINE_integer('img_width', 192, 'Input frame width.')
 flags.DEFINE_integer('seq_length', 3, 'Number of frames in sequence.')
 flags.DEFINE_enum('architecture', nets.RESNET, nets.ARCHITECTURES,
                   'Defines the architecture to use for the depth prediction '
