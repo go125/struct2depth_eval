@@ -68,7 +68,7 @@ python inference.py \
     --egomotion true \
     --input_dir /Users/gosato/Desktop/sekilab_3A2/models/research/struct2depth/input \
     --output_dir /Users/gosato/Desktop/output \
-    --model_ckpt /Users/gosato/Desktop/TokushimaModel/model-40194
+    --model_ckpt /Users/gosato/Desktop/TokushimaModel/model-1004647
 
 
 ```
