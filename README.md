@@ -1,5 +1,7 @@
 
-# struct2depth
+# TestCheckpointFromDFV
+
+This github is from "struct2depth" code.
 
 This a method for unsupervised learning of depth and egomotion from monocular video, achieving new state-of-the-art results on both tasks by explicitly modeling 3D object motion, performing on-line refinement and improving quality for moving objects by novel loss formulations. It will appear in the following paper: 
 
@@ -55,32 +57,7 @@ python inference.py \
     --model_ckpt $model_checkpoint
 ```
 
-```shell
 
-python inference.py \
-    --logtostderr \
-    --file_extension jpg \
-    --depth \
-    --egomotion true \
-    --input_dir /Users/gosato/Desktop/sekilab_3A2/models/research/struct2depth/input \
-    --output_dir /Users/gosato/Desktop/output \
-    --model_ckpt /Users/gosato/Desktop/sekilab_3A2/models/research/struct2depth/cityscapes_kitti_learned_intrinsics/model-1000977
-
-
-```
-```shell
-
-python inference.py \
-    --logtostderr \
-    --file_extension jpg \
-    --depth \
-    --egomotion true \
-    --input_dir /Users/gosato/Desktop/sekilab_3A2/models/research/struct2depth/input \
-    --output_dir /Users/gosato/Desktop/output \
-    --model_ckpt /Users/gosato/Desktop/KITTImodel/model-23534
-
-
-```
 
 ```shell
 
@@ -91,7 +68,7 @@ python inference.py \
     --egomotion true \
     --input_dir /Users/gosato/Desktop/sekilab_3A2/models/research/struct2depth/input \
     --output_dir /Users/gosato/Desktop/output \
-    --model_ckpt /Users/gosato/Desktop/TokushimaModel/model-58058
+    --model_ckpt /Users/gosato/Desktop/TokushimaModel/model-40194
 
 
 ```
