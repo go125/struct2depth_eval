@@ -1,0 +1,14 @@
+prediction_dir="some/prediction/dir"
+
+# Use these settings for KITTI:
+eval_list_file="KITTI_FULL/kitti-raw-uncompressed/test_files_eigen.txt"
+eval_crop="garg"
+eval_mode="kitti"
+
+
+python evaluate.py \
+  --logtostderr \
+  --prediction_dir $prediction_dir \
+  --eval_list_file $eval_list_file \
+  --eval_crop $eval_crop \
+  --eval_mode $eval_mode
