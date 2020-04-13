@@ -1,14 +1,9 @@
-prediction_dir="some/prediction/dir"
-
-# Use these settings for KITTI:
-eval_list_file="KITTI_FULL/kitti-raw-uncompressed/test_files_eigen.txt"
-eval_crop="garg"
-eval_mode="kitti"
-
-
-python evaluate.py \
-  --logtostderr \
-  --prediction_dir $prediction_dir \
-  --eval_list_file $eval_list_file \
-  --eval_crop $eval_crop \
-  --eval_mode $eval_mode
+python inference.py \
+    --logtostderr \
+    --file_extension jpg \
+    --depth \
+    --egomotion true \
+    --input_dir /Users/gosato/Desktop/sekilab_3A2/models/research/struct2depth/input \
+    --output_dir /Users/gosato/Desktop/output \
+    --model_ckpt /Users/gosato/Desktop/TokushimaModel/model-1004647
+    --input_list_file ~/kitti-raw-uncompressed/test_files_eigen.txt
