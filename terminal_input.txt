@@ -3,6 +3,6 @@ python inference.py \
     --file_extension jpg \
     --depth \
     --egomotion true \
-    --output_dir /Users/gosato/Desktop/output \
-    --model_ckpt /Users/gosato/Desktop/TokushimaModel/model-1004647
-    --input_list_file ~/kitti-raw-uncompressed/test_files_eigen.txt
+    --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200413 \
+    --model_ckpt /home/ubuntu/data/cityscapes_kitti_learned_intrinsics/model-1000977 \
+    --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen.txt
