@@ -1,7 +1,7 @@
 
 # TestCheckpointFromDFV
 
-This github is from [struct2depth](https://github.com/tensorflow/models/tree/master/research/struct2depth) code.
+This code is almost same as [struct2depth](https://github.com/tensorflow/models/tree/master/research/struct2depth) code.
 
 # How to run evalutation
 
