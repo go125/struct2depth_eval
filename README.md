@@ -1,7 +1,7 @@
 
 # TestCheckpointFromDFV
 
-This github is from "struct2depth" code.
+This github is from (struct2depth)[https://github.com/tensorflow/models/tree/master/research/struct2depth] code.
 
 # How to run evalutation
 
@@ -28,3 +28,6 @@ python inference.py \
     --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200414/ \
     --model_ckpt /home/ubuntu/data/cityscapes_kitti_learned_intrinsics/model-1000977
 ```
+
+You can get model from [here](https://github.com/google-research/google-research/tree/master/depth_from_video_in_the_wild).
+
