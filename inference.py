@@ -358,7 +358,7 @@ def collect_input_images(input_dir, input_list_file, file_extension):
     im_files = [os.path.join(basepath_in, f) for f in im_files]
   im_files = [f for f in im_files if 'disp' not in f and '-seg' not in f and
               '-fseg' not in f and '-flip' not in f]
-  return sorted(im_files), basepath_in
+  return im_files, basepath_in
 
 
 def create_output_dirs(im_files, basepath_in, output_dir):
