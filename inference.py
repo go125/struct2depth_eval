@@ -224,7 +224,7 @@ def _run_inference(output_dir=None,
             with gfile.Open(output_raw, 'wb') as f:
               np.save(f, est_depth[j])
             print(k)
-            print(len(est_depth))
+            print(len(est_depth[0]))
             util.save_image(output_vis, visualization, file_extension)
           im_batch = []
 
