@@ -178,6 +178,7 @@ def _run_inference(output_dir=None,
     # Run depth prediction network.
     if depth:
       im_batch = []
+      npys=[]
       for i in range(len(im_files)):
         if i % 100 == 0:
           logging.info('%s of %s files processed.', i, len(im_files))
@@ -223,10 +224,11 @@ def _run_inference(output_dir=None,
                 output_dirs[k], filename_root + pref + '.png')
             with gfile.Open(output_raw, 'wb') as f:
               np.save(f, est_depth[j])
-            print(k)
-            print(len(est_depth[0]))
+              npys.append(est_depth[j])
             util.save_image(output_vis, visualization, file_extension)
           im_batch = []
+      with gfile.Open(output_dir+"result.npy", 'wb') as f:
+        np.save(f, npys)
 
     # Run egomotion network.
     if egomotion:
