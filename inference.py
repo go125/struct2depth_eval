@@ -203,8 +203,7 @@ def _run_inference(output_dir=None,
                                      dtype=np.float32))
           im_batch = np.stack(im_batch, axis=0)
           est_depth = inference_model.inference_depth(im_batch, sess)
-          with gfile.Open(output_dir+"result.npy", 'wb') as f:
-            np.save(f, est_depth)
+          npys=[]
           if flip_for_depth:
             est_depth = np.flip(est_depth, axis=2)
             im_batch = np.flip(im_batch, axis=2)
@@ -225,7 +224,10 @@ def _run_inference(output_dir=None,
                 output_dirs[k], filename_root + pref + '.png')
             with gfile.Open(output_raw, 'wb') as f:
               np.save(f, est_depth[j])
+            npys.append(est_depth[j])
             util.save_image(output_vis, visualization, file_extension)
+          with gfile.Open(output_dir+"result.npy", 'wb') as f:
+            np.save(f, npys)
           im_batch = []
 
     # Run egomotion network.
