@@ -203,6 +203,8 @@ def _run_inference(output_dir=None,
                                      dtype=np.float32))
           im_batch = np.stack(im_batch, axis=0)
           est_depth = inference_model.inference_depth(im_batch, sess)
+          with gfile.Open(output_dir+"result.npy", 'wb') as f:
+            np.save(f, est_depth)
           if flip_for_depth:
             est_depth = np.flip(est_depth, axis=2)
             im_batch = np.flip(im_batch, axis=2)
