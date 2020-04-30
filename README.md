@@ -20,7 +20,18 @@ python inference.py \
 
 ### For struct2depth
 
+```shell
+python inference.py \
+    --logtostderr \
+    --file_extension png \
+    --depth \
+    --egomotion true \
+    --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen.txt \
+    --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200430/ \
+    --model_ckpt /home/ubuntu/data/struct2depth_model_kitti/model-199160
+```
 
+You can get model from [here](https://drive.google.com/file/d/1mjb4ioDRH8ViGbui52stSUDwhkGrDXy8/view).
 
 ### For Depth from Video
 
