@@ -18,6 +18,27 @@ python inference.py \
 
 ## Example input
 
+### For struct2depth
+
+
+
+### For Depth from Video
+
+#### kitti_learned_intrinsics
+
+```shell
+python inference.py \
+    --logtostderr \
+    --file_extension png \
+    --depth \
+    --egomotion true \
+    --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen.txt \
+    --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200414/ \
+    --model_ckpt /home/ubuntu/data/kitti_learned_intrinsics/model-248900
+```
+
+#### cityscapes_kitti_learned_intrinsics
+
 ```shell
 python inference.py \
     --logtostderr \
