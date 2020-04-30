@@ -40,7 +40,7 @@ You can get model from [here](https://drive.google.com/file/d/1mjb4ioDRH8ViGbui5
 #### kitti_learned_intrinsics
 
 ```shell
-python inference.py \
+python inference_dfv.py \
     --logtostderr \
     --file_extension png \
     --depth \
