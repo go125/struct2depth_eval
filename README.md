@@ -3,6 +3,8 @@
 
 This code is almost same as [struct2depth](https://github.com/tensorflow/models/tree/master/research/struct2depth) code.
 
+After use this code, you can calculate Abs Rel Error using [this code](https://github.com/go125/SfmLearner_eval).
+
 # How to run evalutation
 
 ```shell
