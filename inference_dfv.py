@@ -37,7 +37,8 @@ from absl import app
 from absl import flags
 from absl import logging
 #import matplotlib.pyplot as plt
-import model
+from depth_from_video_in_the_wild import depth_prediction_net
+from depth_from_video_in_the_wild import model
 import numpy as np
 import fnmatch
 import tensorflow as tf
@@ -147,14 +148,10 @@ def _run_inference(output_dir=None,
                    use_masks=False):
   """Runs inference. Refer to flags in inference.py for details."""
   inference_model = model.Model(is_training=False,
-                                batch_size=batch_size,
-                                img_height=img_height,
-                                img_width=img_width,
-                                seq_length=seq_length,
-                                architecture=architecture,
-                                imagenet_norm=imagenet_norm,
-                                use_skip=use_skip,
-                                joint_encoder=joint_encoder)
+        						batch_size=1,
+        						img_height=128,
+        						img_width=416)
+        						
   vars_to_restore = util.get_vars_to_save_and_restore(model_ckpt)
   saver = tf.train.Saver(vars_to_restore)
   sv = tf.train.Supervisor(logdir='/tmp/', saver=None)
