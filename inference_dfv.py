@@ -221,7 +221,7 @@ def _run_inference(output_dir=None,
                 output_dirs[k], filename_root + pref + '.png')
             with gfile.Open(output_raw, 'wb') as f:
               np.save(f, est_depth[j])
-              npys.append(1/est_depth[j])
+              npys.append(est_depth[j])
             util.save_image(output_vis, visualization, file_extension)
           im_batch = []
       with gfile.Open(output_dir+"result.npy", 'wb') as f:
