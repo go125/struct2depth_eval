@@ -1,5 +1,5 @@
 
-# struce2depth
+# struct2depth
 
 This code is modified from [struct2depth](https://github.com/tensorflow/models/tree/master/research/struct2depth) code for model evaluation.
 
