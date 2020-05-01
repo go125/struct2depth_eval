@@ -1,7 +1,7 @@
 
-# TestCheckpointFromDFV
+# struce2depth
 
-This code is almost same as [struct2depth](https://github.com/tensorflow/models/tree/master/research/struct2depth) code.
+This code is modified from [struct2depth](https://github.com/tensorflow/models/tree/master/research/struct2depth) code for model evaluation.
 
 After use this code, you can calculate Abs Rel Error using [this code](https://github.com/go125/SfmLearner_eval).
 
