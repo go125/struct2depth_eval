@@ -53,7 +53,7 @@ python inference_dfv.py \
 #### cityscapes_kitti_learned_intrinsics
 
 ```shell
-python inference.py \
+python inference_dfv.py \
     --logtostderr \
     --file_extension png \
     --depth \
