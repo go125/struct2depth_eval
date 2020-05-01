@@ -44,7 +44,7 @@ python inference_dfv.py \
     --logtostderr \
     --file_extension png \
     --depth \
-    --egomotion true \
+    --egomotion false \
     --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen.txt \
     --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200501/ \
     --model_ckpt /home/ubuntu/data/kitti_learned_intrinsics/model-248900
@@ -57,7 +57,7 @@ python inference_dfv.py \
     --logtostderr \
     --file_extension png \
     --depth \
-    --egomotion true \
+    --egomotion false \
     --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen.txt \
     --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200501_2/ \
     --model_ckpt /home/ubuntu/data/cityscapes_kitti_learned_intrinsics/model-1000977
