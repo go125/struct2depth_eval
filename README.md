@@ -35,7 +35,7 @@ python inference.py \
 
 You can get model from [here](https://drive.google.com/file/d/1mjb4ioDRH8ViGbui52stSUDwhkGrDXy8/view).
 
-### For Depth from Videos in the wild (Under Construction)
+### For Depth from Videos in the wild
 
 #### kitti_learned_intrinsics (Trained by sekilab AWS)
 
