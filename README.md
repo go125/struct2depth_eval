@@ -50,6 +50,19 @@ python inference_dfv.py \
     --model_ckpt /home/ubuntu/data/kitti_learned_intrinsics/model-248900
 ```
 
+#### kitti_learned_intrinsics (Trained by sekilab AWS)
+
+```shell
+python inference_dfv.py \
+    --logtostderr \
+    --file_extension png \
+    --depth \
+    --egomotion false \
+    --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen.txt \
+    --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200501/ \
+    --model_ckpt /home/ubuntu/data/kitti_learned_intrinsics/model-248900
+```
+
 #### cityscapes_kitti_learned_intrinsics
 
 ```shell
