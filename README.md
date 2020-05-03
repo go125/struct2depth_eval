@@ -37,7 +37,7 @@ You can get model from [here](https://drive.google.com/file/d/1mjb4ioDRH8ViGbui5
 
 ### For Depth from Videos in the wild
 
-#### kitti_learned_intrinsics (Trained by sekilab AWS)
+#### kitti_learned_intrinsics (Trained on sekilab AWS)
 
 ```shell
 python inference_dfv.py \
