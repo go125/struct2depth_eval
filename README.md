@@ -46,8 +46,8 @@ python inference_dfv.py \
     --depth \
     --egomotion false \
     --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen.txt \
-    --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200503_251895/ \
-    --model_ckpt /home/ubuntu/data/KITTI_result_202005031000/model-251895
+    --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200503_259092/ \
+    --model_ckpt /home/ubuntu/data/KITTI_result_202005031000/model-259092
 ```
 
 #### kitti_learned_intrinsics
