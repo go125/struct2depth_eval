@@ -94,11 +94,8 @@ python gen_data_kitti.py
 ```
 python train.py \
   --logtostderr \
-  --checkpoint_dir $ckpt_dir \
-  --data_dir $data_dir \
+  --checkpoint_dir /home/ubuntu/data/struct2depth_checkpoint \
+  --data_dir  /home/ubuntu/data/struct2depth/KITTI_processed \
   --architecture resnet \
-  --imagenet_ckpt $imagenet_ckpt \
-  --imagenet_norm true \
-  --joint_encoder false
   
 ```
