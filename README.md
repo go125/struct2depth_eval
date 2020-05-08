@@ -83,6 +83,22 @@ You can get model from [here](https://github.com/google-research/google-research
 
 Under Construction
 
+### Prepare data
+
 ```
 python gen_data_kitti.py
+```
+
+### Training
+
+```
+python train.py \
+  --logtostderr \
+  --checkpoint_dir $ckpt_dir \
+  --data_dir $data_dir \
+  --architecture resnet \
+  --imagenet_ckpt $imagenet_ckpt \
+  --imagenet_norm true \
+  --joint_encoder false
+  
 ```
