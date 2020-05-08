@@ -84,5 +84,5 @@ You can get model from [here](https://github.com/google-research/google-research
 Under Construction
 
 ```
-python gen_data_kitti.py \
+python gen_data_kitti.py
 ```
