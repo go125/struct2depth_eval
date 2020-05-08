@@ -78,3 +78,11 @@ python inference_dfv.py \
 
 You can get model from [here](https://github.com/google-research/google-research/tree/master/depth_from_video_in_the_wild).
 
+
+## DataGen test (20200508)
+
+Under Construction
+
+```
+python gen_data_kitti.py \
+```
