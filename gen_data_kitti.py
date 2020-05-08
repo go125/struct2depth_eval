@@ -34,7 +34,7 @@ WIDTH = 416
 HEIGHT = 128
 STEPSIZE = 1
 INPUT_DIR = '/home/ubuntu/data/raw_data_KITTI'
-OUTPUT_DIR = '/home/ubuntu/data/struct2depth/KITTI_procesed/'
+OUTPUT_DIR = '/home/ubuntu/data/struct2depth/KITTI_processed/'
 
 
 def get_line(file, start):
