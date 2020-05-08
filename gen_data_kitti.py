@@ -101,7 +101,7 @@ for d in glob.glob(INPUT_DIR + '/*/'):
             ct = 1
             seqname = d2.split('/')[-2] + subfolder.replace('image', '').replace('/data', '')
             if not os.path.exists(OUTPUT_DIR + seqname):
-                os.mkdirs(OUTPUT_DIR + seqname)
+                os.makedirs(OUTPUT_DIR + seqname)
 
             calib_camera = calib_raw[0] if subfolder=='image_02/data' else calib_raw[1]
             folder = d2 + subfolder
