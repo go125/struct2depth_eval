@@ -84,7 +84,7 @@ python inference_dfv.py \
     --file_extension png \
     --depth \
     --egomotion false \
-    --input_list_file ../test_files_eigen.txt \
+    --input_dir ../result_img \
     --output_dir ../depth/ \
     --model_ckpt ../cityscapes_kitti_learned_intrinsics/model-1000977
 ```
