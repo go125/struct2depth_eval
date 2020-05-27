@@ -76,6 +76,19 @@ python inference_dfv.py \
     --model_ckpt /home/ubuntu/data/cityscapes_kitti_learned_intrinsics/model-1000977
 ```
 
+#### cityscapes_kitti_learned_intrinsics (Local)
+
+```shell
+python inference_dfv.py \
+    --logtostderr \
+    --file_extension png \
+    --depth \
+    --egomotion false \
+    --input_list_file ../test_files_eigen.txt \
+    --output_dir ../depth/ \
+    --model_ckpt ../cityscapes_kitti_learned_intrinsics/model-1000977
+```
+
 You can get model from [here](https://github.com/google-research/google-research/tree/master/depth_from_video_in_the_wild).
 
 
