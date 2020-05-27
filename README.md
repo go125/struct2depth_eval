@@ -81,10 +81,10 @@ python inference_dfv.py \
 ```shell
 python inference_dfv.py \
     --logtostderr \
-    --file_extension png \
+    --file_extension jpg \
     --depth \
     --egomotion false \
-    --input_dir ../result_img \
+    --input_dir ../result_img/ \
     --output_dir ../depth/ \
     --model_ckpt ../cityscapes_kitti_learned_intrinsics/model-1000977
 ```
