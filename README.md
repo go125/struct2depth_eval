@@ -91,24 +91,15 @@ python inference_dfv.py \
 
 You can get model from [here](https://github.com/google-research/google-research/tree/master/depth_from_video_in_the_wild).
 
+#### cityscapes_kitti_learned_intrinsics (Local, YouTube_trained)
 
-## DataGen test (20200508)
-
-Under Construction
-
-### Prepare data
-
-```
-python gen_data_kitti.py
-```
-
-### Training
-
-```
-python train.py \
-  --logtostderr \
-  --checkpoint_dir /home/ubuntu/data/struct2depth_checkpoint \
-  --data_dir  /home/ubuntu/data/struct2depth/KITTI_processed \
-  --architecture resnet \
-  
+```shell
+python inference_dfv.py \
+    --logtostderr \
+    --file_extension jpg \
+    --depth \
+    --egomotion false \
+    --input_dir ../result_img/ \
+    --output_dir ../depth/ \
+    --model_ckpt ../cityscapes_kitti_learned_intrinsics_AWS/model-1003806
 ```
