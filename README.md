@@ -85,7 +85,7 @@ python inference_dfv.py \
     --depth \
     --egomotion false \
     --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen_gray.txt \
-    --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200501_2/ \
+    --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200714/ \
     --model_ckpt /home/ubuntu/data/cityscapes_kitti_learned_intrinsics/model-1000977
 ```
 
