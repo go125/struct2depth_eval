@@ -76,6 +76,19 @@ python inference_dfv.py \
     --model_ckpt /home/ubuntu/data/cityscapes_kitti_learned_intrinsics/model-1000977
 ```
 
+#### cityscapes_kitti_learned_intrinsics(gray)
+
+```shell
+python inference_dfv.py \
+    --logtostderr \
+    --file_extension png \
+    --depth \
+    --egomotion false \
+    --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen_gray.txt \
+    --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200501_2/ \
+    --model_ckpt /home/ubuntu/data/cityscapes_kitti_learned_intrinsics/model-1000977
+```
+
 #### cityscapes_kitti_learned_intrinsics (Local)
 
 ```shell
