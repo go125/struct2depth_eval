@@ -20,21 +20,6 @@ python inference.py \
 
 ## Example input
 
-### For struct2depth
-
-```shell
-python inference.py \
-    --logtostderr \
-    --file_extension png \
-    --depth \
-    --egomotion true \
-    --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen.txt \
-    --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200430/ \
-    --model_ckpt /home/ubuntu/data/struct2depth_model_kitti/model-199160
-```
-
-You can get model from [here](https://drive.google.com/file/d/1mjb4ioDRH8ViGbui52stSUDwhkGrDXy8/view).
-
 ### For Depth from Videos in the wild
 
 #### kitti_learned_intrinsics (gray,Trained on sekilab AWS)
@@ -46,8 +31,8 @@ python inference_dfv.py \
     --depth \
     --egomotion false \
     --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen_gray.txt \
-    --output_dir /home/ubuntu/data/result_20200717_273486/ \
-    --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-273486
+    --output_dir /home/ubuntu/data/result_20200717_259092/ \
+    --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-259092
 ```
 
 
