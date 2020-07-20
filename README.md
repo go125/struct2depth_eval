@@ -37,46 +37,6 @@ You can get model from [here](https://drive.google.com/file/d/1mjb4ioDRH8ViGbui5
 
 ### For Depth from Videos in the wild
 
-#### kitti_learned_intrinsics (Trained on sekilab AWS)
-
-```shell
-python inference_dfv.py \
-    --logtostderr \
-    --file_extension png \
-    --depth \
-    --egomotion false \
-    --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen.txt \
-    --output_dir /home/ubuntu/data/result_20200624_273486/ \
-    --model_ckpt /home/ubuntu/data/result20200624/model-273486
-```
-
-#### kitti_learned_intrinsics
-
-```shell
-python inference_dfv.py \
-    --logtostderr \
-    --file_extension png \
-    --depth \
-    --egomotion false \
-    --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen.txt \
-    --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200501/ \
-    --model_ckpt /home/ubuntu/data/kitti_learned_intrinsics/model-248900
-```
-
-#### cityscapes_kitti_learned_intrinsics
-
-```shell
-python inference_dfv.py \
-    --logtostderr \
-    --file_extension png \
-    --depth \
-    --egomotion false \
-    --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen.txt \
-    --output_dir /home/ubuntu/data/dfv_KITTI_depth_result_20200501_2/ \
-    --model_ckpt /home/ubuntu/data/cityscapes_kitti_learned_intrinsics/model-1000977
-```
-
-
 #### kitti_learned_intrinsics (gray,Trained on sekilab AWS)
 
 ```shell
@@ -86,10 +46,9 @@ python inference_dfv.py \
     --depth \
     --egomotion false \
     --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen_gray.txt \
-    --output_dir /home/ubuntu/data/result_20200717_158334/ \
-    --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-244698
+    --output_dir /home/ubuntu/data/result_20200717_273486/ \
+    --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-273486
 ```
-
 
 
 #### cityscapes_kitti_learned_intrinsics (Local)
@@ -106,19 +65,6 @@ python inference_dfv.py \
 ```
 
 You can get model from [here](https://github.com/google-research/google-research/tree/master/depth_from_video_in_the_wild).
-
-#### cityscapes_kitti_learned_intrinsics (Local, YouTube_trained)
-
-```shell
-python inference_dfv.py \
-    --logtostderr \
-    --file_extension jpg \
-    --depth \
-    --egomotion false \
-    --input_dir ../result_img/ \
-    --output_dir ../depth/ \
-    --model_ckpt ../cityscapes_kitti_learned_intrinsics_AWS/model-1003806
-```
 
 #### cityscapes_kitti_learned_intrinsics (Local, YouTube_trained)
 
