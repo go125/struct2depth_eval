@@ -35,6 +35,17 @@ python inference_dfv.py \
     --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-14394
 ```
 
+```shell
+python inference_dfv.py \
+    --logtostderr \
+    --file_extension png \
+    --depth \
+    --egomotion false \
+    --input_dir /home/ubuntu/Sayama/video1top_cropped \
+    --output_dir /home/ubuntu/Sayama/result_video1top_14394/ \
+    --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-14394
+```
+
 
 #### cityscapes_kitti_learned_intrinsics (Local)
 
