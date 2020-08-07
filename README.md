@@ -43,7 +43,7 @@ python inference_dfv.py \
     --egomotion false \
     --input_dir /home/ubuntu/Sayama/video1top_cropped \
     --output_dir /home/ubuntu/Sayama/result_video1top_14394/ \
-    --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-14394
+    --model_ckpt /home/ubuntu/data/cityscapes_kitti_learned_intrinsics/model-1000977
 ```
 
 
