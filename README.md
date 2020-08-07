@@ -38,7 +38,7 @@ python inference_dfv.py \
 ```shell
 python inference_dfv.py \
     --logtostderr \
-    --file_extension jpg \
+    --file_extension png \
     --depth \
     --egomotion false \
     --input_dir /home/ubuntu/Sayama/tmpdir/2020_08_04/video1top_png/image_02/data/ \
