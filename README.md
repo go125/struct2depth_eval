@@ -42,7 +42,7 @@ python inference_dfv.py \
     --depth \
     --egomotion false \
     --input_dir /home/ubuntu/Sayama/video1top_cropped \
-    --output_dir /home/ubuntu/Sayama/result_video1top_14394/ \
+    --output_dir /home/ubuntu/Sayama/result_video1top_1000977/ \
     --model_ckpt /home/ubuntu/data/cityscapes_kitti_learned_intrinsics/model-1000977
 ```
 
