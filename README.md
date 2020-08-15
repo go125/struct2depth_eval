@@ -42,8 +42,19 @@ python inference_dfv.py \
     --depth \
     --egomotion false \
     --input_dir /home/ubuntu/Sayama/tmpdir/2020_08_04/video1top_png/image_02/data/ \
-    --output_dir /home/ubuntu/Sayama/result_video1top_1000977/ \
-    --model_ckpt /home/ubuntu/data/cityscapes_kitti_learned_intrinsics/model-1000977
+    --output_dir /home/ubuntu/Sayama/result_video1top_273486/ \
+    --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-273486
+```
+
+```shell
+python inference_dfv.py \
+    --logtostderr \
+    --file_extension png \
+    --depth \
+    --egomotion false \
+    --input_dir /home/ubuntu/Sayama/tmpdir/2020_08_04/video1top_png/image_02/data/ \
+    --output_dir /home/ubuntu/Sayama/result_video1top_279296/ \
+    --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-279296
 ```
 
 
