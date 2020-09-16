@@ -20,9 +20,9 @@ python inference.py \
 
 ## Example input
 
-### For Depth from Videos in the wild
+## For Depth from Videos in the wild
 
-#### kitti_learned_intrinsics (gray,Trained on sekilab AWS)
+### kitti_learned_intrinsics (gray,Trained on sekilab AWS)
 
 ```shell
 python inference_dfv.py \
@@ -35,9 +35,9 @@ python inference_dfv.py \
     --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-14394
 ```
 
-#### kitti_learned_intrinsics (gray,Trained on sekilab AWS, Stereo Camera in Saitama)
+### kitti_learned_intrinsics (gray,Trained on sekilab AWS, Stereo Camera in Saitama)
 
-##### Before fine tuning
+#### Before fine tuning
 
 ```shell
 python inference_dfv.py \
@@ -50,7 +50,7 @@ python inference_dfv.py \
     --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-273486
 ```
 
-##### After fine tuning
+#### After fine tuning
 
 ```shell
 python inference_dfv.py \
@@ -64,7 +64,7 @@ python inference_dfv.py \
 ```
 
 
-#### cityscapes_kitti_learned_intrinsics (Local)
+### cityscapes_kitti_learned_intrinsics (Local)
 
 ```shell
 python inference_dfv.py \
@@ -79,7 +79,7 @@ python inference_dfv.py \
 
 You can get model from [here](https://github.com/google-research/google-research/tree/master/depth_from_video_in_the_wild).
 
-#### cityscapes_kitti_learned_intrinsics (Local, YouTube_trained)
+### cityscapes_kitti_learned_intrinsics (Local, YouTube_trained)
 
 ```shell
 python inference_dfv.py \
