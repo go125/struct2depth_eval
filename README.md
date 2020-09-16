@@ -46,6 +46,8 @@ python inference_dfv.py \
     --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-273486
 ```
 
+#### kitti_learned_intrinsics (gray,Trained on sekilab AWS, Stereo Camera in Saitama)
+
 ```shell
 python inference_dfv.py \
     --logtostderr \
