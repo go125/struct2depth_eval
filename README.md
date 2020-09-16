@@ -18,7 +18,7 @@ python inference.py \
     --model_ckpt $MODEL_NAME
 ```
 
-## Example input
+# Example input
 
 ## For Depth from Videos in the wild
 
