@@ -1,26 +1,39 @@
 
 # struct2depth_eval
 
-This code is modified from [struct2depth](https://github.com/tensorflow/models/tree/master/research/struct2depth) code for model evaluation.
+This code is modified from [struct2depth](https://github.com/tensorflow/models/tree/master/research/struct2depth) code to use [depth_from_video_in_the_wild](https://github.com/google-research/google-research/tree/master/depth_from_video_in_the_wild).
 
 After use this code, you can calculate Abs Rel Error using [this code](https://github.com/go125/SfmLearner_eval).
 
-# How to run evalutation
-
-```shell
-python inference.py \
-    --logtostderr \
-    --file_extension png \
-    --depth \
-    --egomotion true \
-    --input_list_file $RAW_DATA_KITTI/test_files_eigen.txt \
-    --output_dir $OUTPUT_DIR \
-    --model_ckpt $MODEL_NAME
-```
 
 # Example input
 
-## For Depth from Videos in the wild
+## Train example
+
+[Data Preparation](https://github.com/go125/PrepareDataForDFV)
+[Checkpoint Preparation](https://github.com/dalgu90/resnet-18-tensorflow)
+
+```script
+nohup python -m depth_from_video_in_the_wild.train \
+--data_dir /home/ubuntu/data/kitti_result_all_20200715 \
+--checkpoint_dir=/home/ubuntu/data/kitti_experiment_checkpoint_20200716 \
+--imagenet_ckpt=/home/ubuntu/data/ResNet18/model.ckpt \
+--train_steps=1000000 &
+
+```
+
+## Finetuning with the video taken in Saitama
+
+```script
+nohup python -m depth_from_video_in_the_wild.train \
+--data_dir /home/ubuntu/Sayama/out \
+--checkpoint_dir=/home/ubuntu/data/kitti_experiment_checkpoint_20200716 \
+--imagenet_ckpt=/home/ubuntu/data/ResNet18/model.ckpt \
+--train_steps=1000000 &
+
+```
+
+## Evaluation
 
 ### kitti_learned_intrinsics (gray,Trained on sekilab AWS)
 
