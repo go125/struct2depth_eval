@@ -35,22 +35,9 @@ nohup python -m depth_from_video_in_the_wild.train \
 
 ## Evaluation
 
-### kitti_learned_intrinsics (gray,Trained on sekilab AWS)
+## kitti_learned_intrinsics (gray,Trained on sekilab AWS, Stereo Camera in Saitama)
 
-```shell
-python inference_dfv.py \
-    --logtostderr \
-    --file_extension png \
-    --depth \
-    --egomotion false \
-    --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen_gray.txt \
-    --output_dir /home/ubuntu/data/result_20200717_14394/ \
-    --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-14394
-```
-
-### kitti_learned_intrinsics (gray,Trained on sekilab AWS, Stereo Camera in Saitama)
-
-#### Before fine tuning
+### Before fine tuning
 
 ```shell
 python inference_dfv.py \
@@ -63,7 +50,7 @@ python inference_dfv.py \
     --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-273486
 ```
 
-#### After fine tuning
+### After fine tuning
 
 ```shell
 python inference_dfv.py \
@@ -74,33 +61,4 @@ python inference_dfv.py \
     --input_dir /home/ubuntu/Sayama/tmpdir/2020_08_04/video1top_png/image_02/data/ \
     --output_dir /home/ubuntu/Sayama/result_video1top_279296/ \
     --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-279296
-```
-
-
-### cityscapes_kitti_learned_intrinsics (Local)
-
-```shell
-python inference_dfv.py \
-    --logtostderr \
-    --file_extension jpg \
-    --depth \
-    --egomotion false \
-    --input_dir ../result_img/ \
-    --output_dir ../depth/ \
-    --model_ckpt ../cityscapes_kitti_learned_intrinsics/model-1000977
-```
-
-You can get model from [here](https://github.com/google-research/google-research/tree/master/depth_from_video_in_the_wild).
-
-### cityscapes_kitti_learned_intrinsics (Local, YouTube_trained)
-
-```shell
-python inference_dfv.py \
-    --logtostderr \
-    --file_extension jpg \
-    --depth \
-    --egomotion false \
-    --input_dir ../result_img/ \
-    --output_dir ../depth/ \
-    --model_ckpt ../cityscapes_kitti_learned_intrinsics_AWS/model-1003806
 ```
