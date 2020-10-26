@@ -35,8 +35,6 @@ nohup python -m depth_from_video_in_the_wild.train \
 
 ## Evaluation
 
-## kitti_learned_intrinsics (gray,Trained on sekilab AWS, Stereo Camera in Saitama)
-
 ### Before fine tuning
 
 ```shell
