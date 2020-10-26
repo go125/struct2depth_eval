@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2020 The Google Research Authors.
+# Copyright 2019 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ from __future__ import print_function
 
 from absl import logging
 
-import tensorflow.compat.v1 as tf
+import tensorflow as tf
 from depth_from_video_in_the_wild import consistency_losses
 from depth_from_video_in_the_wild import depth_prediction_net
 from depth_from_video_in_the_wild import motion_prediction_net
@@ -32,11 +32,10 @@ from depth_from_video_in_the_wild import randomized_layer_normalization
 from depth_from_video_in_the_wild import reader
 from depth_from_video_in_the_wild import transform_depth_map
 from depth_from_video_in_the_wild import transform_utils
-from tensorflow.contrib import slim as contrib_slim
 
 
 gfile = tf.gfile
-slim = contrib_slim
+slim = tf.contrib.slim
 # Number of subsequent frames per training sample. It is set to 3 for mainly
 # legacy reasons: The training loss itself only involves two adjacent images at
 # a time.
@@ -112,7 +111,7 @@ class Model(object):
   def _build_train_graph(self):
     """Build a training graph and savers."""
     self._build_loss()
-    self.saver = tf.train.Saver()
+    self.saver = tf.train.Saver(max_to_keep=0)
     # Create a saver for initializing resnet18 weights from imagenet.
     vars_to_restore = [
         v for v in tf.trainable_variables()
@@ -145,12 +144,19 @@ class Model(object):
 
     (self.image_stack, self.image_stack_norm, self.seg_stack,
      self.intrinsic_mat, _) = self.reader.read_data()
+     
+    print('results')
+    logging.info('intrinsic_mat: %s',self.intrinsic_mat)
+    
     if self.learn_intrinsics:
       self.intrinsic_mat = None
     if self.intrinsic_mat is None and not self.learn_intrinsics:
       raise RuntimeError('Could not read intrinsic matrix. Turn '
                          'learn_intrinsics on to learn it instead of loading '
                          'it.')
+    
+    logging.info('intrinsic_mat: %s',self.intrinsic_mat)
+    
     self.export('self.image_stack', self.image_stack)
 
     object_masks = []
@@ -268,8 +274,10 @@ class Model(object):
 
           if self.learn_intrinsics:
             intrinsic_mat = 0.5 * (mat + inv_mat)
+            logging.info('intrinsic_mat: %s',intrinsic_mat)
           else:
             intrinsic_mat = self.intrinsic_mat[:, 0, :, :]
+            
 
           def dilate(x):
             # Dilation by n pixels is roughtly max pooling by 2 * n + 1.

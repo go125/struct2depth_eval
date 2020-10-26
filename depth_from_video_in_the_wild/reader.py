@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2020 The Google Research Authors.
+# Copyright 2019 The Google Research Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ from __future__ import print_function
 import os
 import random
 from absl import logging
-import tensorflow.compat.v1 as tf
+import tensorflow as tf
 
 gfile = tf.gfile
 
