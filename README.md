@@ -11,7 +11,7 @@ After use this code, you can calculate Abs Rel Error using [this code](https://g
 ## Train example
 
 - [Data Preparation](https://github.com/go125/PrepareDataForDFV)
-- [Checkpoint Preparation](https://github.com/dalgu90/resnet-18-tensorflow)
+- [ImageNet Checkpoint Preparation](https://github.com/dalgu90/resnet-18-tensorflow)
 
 ```script
 nohup python -m depth_from_video_in_the_wild.train \
