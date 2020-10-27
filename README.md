@@ -55,6 +55,25 @@ python inference_dfv.py \
 python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20201026_14394/result.npy
 ```
 
+abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,         a3,     scalor 
+
+0.1829,     1.3158,     6.3322,     0.2586,     0.0000,     0.7241,     0.9077,     0.9670 ,   10.7764 
+
+```shell
+python inference_dfv.py \
+    --logtostderr \
+    --file_extension png \
+    --depth \
+    --egomotion false \
+    --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen_gray.txt \
+    --output_dir /home/ubuntu/data/result_20201026_71970/ \
+    --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20201026/model-71970
+```
+
+```shell
+python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20201026_71970/result.npy
+```
+
 ### Sayama
 
 ```shell
