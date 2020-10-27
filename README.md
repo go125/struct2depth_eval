@@ -3,8 +3,7 @@
 
 This code is modified from [struct2depth](https://github.com/tensorflow/models/tree/master/research/struct2depth) code to use [depth_from_video_in_the_wild](https://github.com/google-research/google-research/tree/master/depth_from_video_in_the_wild).
 
-After use this code, you can calculate Abs Rel Error using [this code](https://github.com/go125/SfmLearner_eval).
-(Calculating Abs Rel Error in this dir is also possible.)
+Abs Rel Error calculation code is the same as [this dir](https://github.com/go125/SfmLearner_eval).
 
 
 # Example input
