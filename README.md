@@ -40,7 +40,16 @@ nohup python -m depth_from_video_in_the_wild.train \
 
 ### KITTI
 
-
+```shell
+python inference_dfv.py \
+    --logtostderr \
+    --file_extension png \
+    --depth \
+    --egomotion false \
+    --input_list_file /home/ubuntu/data/raw_data_KITTI/test_files_eigen_gray.txt \
+    --output_dir /home/ubuntu/data/result_20201026_14394/ \
+    --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20201026/model-14394
+```
 
 ### Sayama
 
