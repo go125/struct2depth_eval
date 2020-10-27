@@ -16,7 +16,7 @@ After use this code, you can calculate Abs Rel Error using [this code](https://g
 ```script
 nohup python -m depth_from_video_in_the_wild.train \
 --data_dir /home/ubuntu/data/kitti_result_all_20200715 \
---checkpoint_dir=/home/ubuntu/data/kitti_experiment_checkpoint_20201026 \
+--checkpoint_dir=/home/ubuntu/data/kitti_experiment_checkpoint_20200716 \
 --imagenet_ckpt=/home/ubuntu/data/ResNet18/model.ckpt \
 --train_steps=1000000 &
 
@@ -27,7 +27,7 @@ nohup python -m depth_from_video_in_the_wild.train \
 ```script
 nohup python -m depth_from_video_in_the_wild.train \
 --data_dir /home/ubuntu/Sayama/out \
---checkpoint_dir=/home/ubuntu/data/kitti_experiment_checkpoint_20201026 \
+--checkpoint_dir=/home/ubuntu/data/kitti_experiment_checkpoint_20200716 \
 --imagenet_ckpt=/home/ubuntu/data/ResNet18/model.ckpt \
 --train_steps=1000000 &
 
