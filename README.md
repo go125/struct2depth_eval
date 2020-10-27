@@ -37,6 +37,13 @@ nohup python -m depth_from_video_in_the_wild.train \
 
 ### Before fine tuning
 
+
+### KITTI
+
+
+
+### Sayama
+
 ```shell
 python inference_dfv.py \
     --logtostderr \
