@@ -4,6 +4,7 @@
 This code is modified from [struct2depth](https://github.com/tensorflow/models/tree/master/research/struct2depth) code to use [depth_from_video_in_the_wild](https://github.com/google-research/google-research/tree/master/depth_from_video_in_the_wild).
 
 After use this code, you can calculate Abs Rel Error using [this code](https://github.com/go125/SfmLearner_eval).
+(Calculating Abs Rel Error in this dir is also possible.)
 
 
 # Example input
@@ -48,6 +49,10 @@ python inference_dfv.py \
     --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-273486
 ```
 
+```shell
+python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20200716_273486/result.npy
+```
+
 ### After fine tuning
 
 ```shell
@@ -59,4 +64,8 @@ python inference_dfv.py \
     --input_dir /home/ubuntu/Sayama/tmpdir/2020_08_04/video1top_png/image_02/data/ \
     --output_dir /home/ubuntu/Sayama/result_video1top_279296/ \
     --model_ckpt /home/ubuntu/data/kitti_experiment_checkpoint_20200716/model-279296
+```
+
+```shell
+python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20200716_279296/result.npy
 ```
