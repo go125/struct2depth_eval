@@ -74,6 +74,10 @@ python inference_dfv.py \
 python kitti_eval/eval_depth.py --kitti_dir=/home/ubuntu/data/raw_data_KITTI/ --pred_file=/home/ubuntu/data/result_20201026_71970/result.npy
 ```
 
+abs_rel,     sq_rel,        rms,    log_rms,     d1_all,         a1,         a2,         a3,     scalor 
+
+0.1409,     1.0408,     5.5013,     0.2189,     0.0000,     0.8137,     0.9391,     0.9767 ,   11.1339 
+
 ### Sayama
 
 ```shell
