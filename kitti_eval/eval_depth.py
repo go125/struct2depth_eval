@@ -9,7 +9,7 @@ from depth_evaluation_utils import *
 parser = argparse.ArgumentParser()
 parser.add_argument("--kitti_dir", type=str, help='Path to the KITTI dataset directory')
 parser.add_argument("--pred_file", type=str, help="Path to the prediction file")
-parser.add_argument("--test_file_list", type=str, default='./data/kitti/test_files_eigen.txt', 
+parser.add_argument("--test_file_list", type=str, default='./kitti_eval/test_files_eigen.txt', 
     help="Path to the list of test files")
 parser.add_argument('--min_depth', type=float, default=1e-3, help="Threshold for minimum depth")
 parser.add_argument('--max_depth', type=float, default=80, help="Threshold for maximum depth")
