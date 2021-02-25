@@ -3,7 +3,7 @@
 
 This code is modified from "struct2depth" to use and evaluate [depth_from_video_in_the_wild](https://github.com/google-research/google-research/tree/master/depth_from_video_in_the_wild).
 
-Abs Rel Error calculation code is the same as [this dir](https://github.com/go125/SfmLearner_eval).
+Abs Rel Error calculation code is the same as [this dir](https://github.com/tinghuiz/SfMLearner).
 
 
 # Example input
